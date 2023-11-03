@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favourite Hobby</title>
+<!-- 
+1) How to import fonts.
+2) Universal Selector(*).
+3) vw & vh units.
+4) IMP: CSS Box Model
+-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        *, body {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: some other */
+            box-sizing: border-box; 
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        nav {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: 500
+        }
+
+        img {
+            width: 100vw;
+            height: 75vh;
+            object-fit: cover;
+        }
+
+        .sec {
+            padding: 20px;
+        }
+
+        .underline {
+            text-decoration: underline;
+            color: brown;
+        }
+
+        #pieces {
+            list-style-position: inside;
+            margin-top: 15px;
+        }
+
+        #pieces > li {
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        #pieces > ul > li {
+            list-style-type: disc;
+            padding-left: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: brown;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+    </style>
+  </head>
+  <body>
+    <!-- Opening -->
+    <nav>Favourite Hobby</nav>
+    <img src="chess-image.jpg" alt="Chess image">
+
+    <!-- Introduction -->
+    <div id="intro" class="sec">
+        <h1 class="underline">Introduction</h1>
+        <p>Chess, often hailed as the <b>game of kings,</b> is a captivating pastime that has enticed minds for centuries. This timeless board game combines strategy, skill, and intellect to create an engaging and rewarding experience. In this article, we will delve into the history of chess, the chess pieces and their movements, and the enduring appeal of this intellectual pursuit.</p>
+    </div>
+
+    <!-- History -->
+    <div id="history" class="sec">
+        <h1 class="underline">The History of Chess</h1>
+        <p>Chess's origins are shrouded in mystery, with its roots dating back over a thousand years. This ancient game is believed to have evolved from the Indian game "Chaturanga" around the 6th century. Chaturanga was a battle simulation game with pieces representing the four arms of the Indian military: infantry, cavalry, elephants, and chariots. As it spread across the world, the game transformed into chess, adopting the iconic pieces and rules we know today.</p>
+    </div>
+
+    <div id="board-and-pieces" class="sec">
+        <h1 class="underline">The Chessboard & Pieces</h1>
+        <p>A standard chessboard consists of <b>64 squares</b>, arranged in an 8x8 grid, with alternating black and white squares. The chess pieces, each with unique movements and characteristics, add depth and complexity to the game. Here's a breakdown of the six different types of chess pieces and their respective moves:</p>
+
+        <ol id="pieces">
+            <li>The King</li>
+            <ul>
+                <li>The most crucial piece on the board.</li>
+                <li>Moves one square in any direction: horizontally, vertically, or diagonally.</li>
+                <li>The game's objective is to protect your king while threatening your opponent's.</li>
+            </ul>
+            <li>The Queen</li>
+            <ul>
+                <li>The most powerful piece.</li>
+                <li>Moves horizontally, vertically, or diagonally across any number of squares.</li>
+                <li>A versatile piece that plays a significant role in both offense and defense.</li>
+            </ul>
+            <li>The Rook</li>
+            <ul>
+                <li>Moves horizontally or vertically across any number of squares.</li>
+                <li>A powerful piece, especially in the endgame, when the board opens up.</li>
+            </ul>
+            <li>The Bishop</li>
+            <ul>
+                <li>Moves diagonally across any number of squares.</li>
+                <li>Two bishops per player: one on light squares and one on dark squares.</li>
+                <li>Bishops complement each other's mobility and are crucial for controlling the board.</li>
+            </ul>
+            <li>The Knight</li>
+            <ul>
+                <li>Moves in an L-shape: two squares in one direction and one square perpendicular.</li>
+                <li>Knights are the only pieces that can "jump" over other pieces.</li>
+                <li>Their unique movement often leads to surprising tactical opportunities.</li>
+            </ul>
+            <li>The Pawn</li>
+            <ul>
+                <li>Moves forward one square but captures diagonally.</li>
+                <li>On their first move, pawns have the option to advance two squares.</li>
+                <li>Pawns can be promoted to any other piece if they reach the opponent's back rank.</li>
+            </ul>
+        </ol>
+    </div>
+
+    <div id="challenge" class="sec">
+        <h1 class="underline">Let's Have a Game</h1>
+        <p>Wanna play chess, let's have a game. <a href="https://play.chess.com/DqcTK" target="_blank" rel="noopener noreferrer">Click here</a> to play with me.</p>
+    </div>
+</html>

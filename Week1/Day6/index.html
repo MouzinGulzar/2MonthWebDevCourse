@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling HTML with inline CSS</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+      input,
+      textarea,
+      select {
+        display: block;
+        border: 1px solid black;
+        margin: 10px;
+        outline: none;
+        border-radius: 50px;
+        font-size: 1.05rem;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 15rem !important;
+      }
+
+      input:focus {
+        border: 1px solid blue;
+        box-shadow: 0px 0px 5px rgb(121, 121, 255);
+      }
+      
+      input[type="checkbox"],
+      input[type="radio"] {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        id="user"
+        name="user"
+        placeholder="Name"
+        required
+      />
+
+      <input
+        type="text"
+        id="father-name"
+        name="father-name"
+        placeholder="Father's name"
+        required
+      />
+
+      <input
+        type="number"
+        id="contact-number"
+        name="contact-number"
+        placeholder="Phone"
+        required
+      />
+
+      <input
+        type="number"
+        id="contact-number-home"
+        name="contact-number-home"
+        placeholder="Work"
+        required
+      />
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        name="email"
+        required
+      />
+
+      <label for="">DOB:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="profile">Photograph:</label>
+      <input type="file" id="profile" name="profile" required />
+      
+      <input
+        type="password"
+        id="password"
+        name="pass"
+        placeholder="Password"
+        required
+      />
+      
+      <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Bio" required style="border-radius: 10px;"></textarea  >
+
+      <select name="qualification" id="qualification">
+        <option value="" disabled selected>Qualification</option>
+        <option value="1">Phd</option>
+        <option value="2">Postgraduate</option>
+        <option value="3">Undergradute</option>
+        <option value="4">Intermediate</option>
+        <option value="5">Matriculation</option>
+        <option value="6">Middle</option>
+        <option value="7">Primary</option>
+      </select>
+      <br /><br />
+
+      <label for="interests">Interests:</label>
+      <br />
+      <input type="checkbox" id="interest1" name="interest1" value="1" />
+      <label for="interest1"> Playing</label>
+      <br />
+      <input type="checkbox" id="interest2" name="interest2" value="2" />
+      <label for="interest2"> Writing</label>
+      <br />
+      <input type="checkbox" id="interest3" name="interest3" value="3" />
+      <label for="interest3">Poetry</label>
+      <br />
+      <input type="checkbox" id="interest4" name="interest4" value="4" />
+      <label for="interest4">Coding</label>
+      <br /><br />
+
+      <label for="course">Course:</label>
+      <br />
+      <input type="radio" id="course1" name="course" value="1" />
+      <label for="course1"> B.tech</label>
+      <br />
+      <input type="radio" id="course2" name="course" value="2" />
+      <label for="course2"> M.tech</label>
+      <br />
+      <input type="radio" id="course3" name="course" value="3" />
+      <label for="course3">BCA</label>
+      <br />
+      <input type="radio" id="course4" name="course" value="4" />
+      <label for="course">MCA</label>
+      <br /><br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>

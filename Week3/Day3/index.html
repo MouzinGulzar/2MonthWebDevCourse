@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Navigation Bar</title>
+    <style>
+      *,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns: 125px 1fr;
+        grid-template-areas:
+          "top-nav top-nav"
+          "side-nav main"
+          "side-nav footer";
+      }
+
+      #top-nav {
+        grid-area: top-nav;
+        background-color: purple;
+        color: white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        position: sticky;
+        top: 0;
+      }
+
+      #side-nav {
+        grid-area: side-nav;
+        position: fixed;
+        top: 50px;
+        display: inline-block;
+        background-color: rgb(182, 181, 181);
+        height: calc(100vh - 50px);
+        overflow-y: scroll;
+        padding: 10px 0;
+        width: 125px;
+      }
+
+      #side-nav::-webkit-scrollbar-track {
+        padding: 2px 0;
+        background-color: rgb(182, 181, 181);
+      }
+
+      #side-nav::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      #side-nav::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: purple;
+      }
+
+      #side-nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #side-nav ul a {
+        text-decoration: none;
+        color: black;
+        padding: 3px 30px;
+        display: block;
+      }
+
+      #side-nav ul a:hover {
+        background-color: rgb(200, 200, 200);
+      }
+
+      main {
+        grid-area: main;
+        margin: 10px;
+      }
+
+      main img {
+        width: 40vw;
+        height: 50vh;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgb(147, 146, 146);
+      }
+
+      #intro {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      #intro-desc {
+        width: 30vw;
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: purple;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #container {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "top-nav"
+            "main"
+            "footer";
+        }
+        #side-nav {
+          display: none;
+        }
+
+        #intro {
+          flex-direction: column;
+        }
+
+        main img {
+          width: 90vw;
+        }
+
+        #intro-desc {
+          width: 90vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <nav id="top-nav">
+        <h1>Code Road Softwares</h1>
+      </nav>
+      <nav id="side-nav">
+        <ul>
+          <a href="#"> <li>Item 1</li> </a
+          ><a href="#"> <li>Item 2</li> </a
+          ><a href="#"> <li>Item 3</li> </a
+          ><a href="#"> <li>Item 4</li> </a
+          ><a href="#"> <li>Item 5</li> </a
+          ><a href="#"> <li>Item 6</li> </a
+          ><a href="#"> <li>Item 7</li> </a
+          ><a href="#"> <li>Item 8</li> </a
+          ><a href="#"> <li>Item 9</li> </a
+          ><a href="#"> <li>Item 10</li> </a
+          ><a href="#"> <li>Item 11</li> </a
+          ><a href="#"> <li>Item 12</li> </a
+          ><a href="#"> <li>Item 13</li> </a
+          ><a href="#"> <li>Item 14</li> </a
+          ><a href="#"> <li>Item 15</li> </a
+          ><a href="#"> <li>Item 16</li> </a
+          ><a href="#"> <li>Item 17</li> </a
+          ><a href="#"> <li>Item 18</li> </a
+          ><a href="#"> <li>Item 19</li> </a
+          ><a href="#"> <li>Item 20</li> </a
+          ><a href="#"> <li>Item 21</li> </a
+          ><a href="#"> <li>Item 22</li> </a
+          ><a href="#"> <li>Item 23</li> </a
+          ><a href="#"> <li>Item 24</li> </a
+          ><a href="#"> <li>Item 25</li> </a
+          ><a href="#"> <li>Item 26</li> </a
+          ><a href="#"> <li>Item 27</li> </a
+          ><a href="#"> <li>Item 28</li> </a
+          ><a href="#"> <li>Item 29</li> </a
+          ><a href="#"> <li>Item 30</li> </a
+          ><a href="#"> <li>Item 31</li> </a
+          ><a href="#"> <li>Item 32</li> </a
+          ><a href="#"> <li>Item 33</li> </a
+          ><a href="#"> <li>Item 34</li> </a
+          ><a href="#"> <li>Item 35</li> </a
+          ><a href="#"> <li>Item 36</li> </a
+          ><a href="#"> <li>Item 37</li> </a
+          ><a href="#"> <li>Item 38</li> </a
+          ><a href="#"> <li>Item 39</li> </a
+          ><a href="#"> <li>Item 40</li> </a
+          ><a href="#"> <li>Item 41</li> </a
+          ><a href="#"> <li>Item 42</li> </a
+          ><a href="#"> <li>Item 43</li> </a
+          ><a href="#"> <li>Item 44</li> </a
+          ><a href="#"> <li>Item 45</li> </a
+          ><a href="#"> <li>Item 46</li> </a
+          ><a href="#"> <li>Item 47</li> </a
+          ><a href="#"> <li>Item 48</li> </a
+          ><a href="#"> <li>Item 49</li> </a
+          ><a href="#">
+            <li>Item 50</li>
+          </a>
+        </ul>
+      </nav>
+      <main>
+        <div id="intro">
+          <img src="https://picsum.photos/700" alt="" />
+          <div id="intro-desc">
+            <h1>Code Road Softwares</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id
+              magni deserunt aut ratione. Dolor, iste voluptas quam magnam minus
+              voluptate temporibus vero ut ad ipsum corporis provident quos
+              voluptatem?
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>Copyright CodeRoad Softwares</footer>
+    </div>
+  </body>
+</html>

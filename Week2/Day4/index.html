@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .myclass {
+        min-width: 50px;
+        height: 50px;
+        background-color: red;
+        color: black;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        background-color: yellow;
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+    #div5 {
+        order: 1;
+        align-self: flex-end;
+    }
+    #div6 {
+        align-self: center;
+    }
+    #div2 {
+        align-self: flex-end;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="myclass" id="div1">1</div>
+      <div class="myclass" id="div2">2</div>
+      <div class="myclass" id="div3">3</div>
+      <div class="myclass" id="div4">4</div>
+      <div class="myclass" id="div5">5</div>
+      <div class="myclass" id="div6">6</div>
+      <div class="myclass" id="div7">7</div>
+      <div class="myclass" id="div8">8</div>
+      <div class="myclass" id="div9">9</div>
+      <div class="myclass" id="div10">10</div>
+    </div>
+  </body>
+</html>

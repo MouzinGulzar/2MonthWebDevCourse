@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Baking World</title>
+    <style>
+      *,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr 150px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "Segoe Script", cursive;
+        font-size: 1.5em;
+        margin: 10px;
+      }
+
+      h3 {
+        font-family: "Segoe Script", cursive;
+        font-size: 1.2em;
+        margin: 10px;
+        text-decoration: underline;
+      }
+
+      h1,
+      p {
+        margin: 10px;
+      }
+      p {
+        text-align: justify;
+      }
+
+      .image {
+        /* margin: 20px 25px 0px 15px; */
+        padding: 10px;
+        border: 1px solid black;
+        /* border-radius: 50%; */
+      }
+      #header {
+        background-color: rgb(61, 17, 52);
+        color: white;
+        height: 50px;
+        grid-column: 1/5;
+        position: sticky;
+        top: 0;
+      }
+
+      #leftsidebar {
+        position: sticky;
+        top: 50px;
+        background-color: rgb(218, 168, 168);
+        color: black;
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+        font-size: large;
+        grid-column: 1/2;
+        padding-left: 10px;
+      }
+
+      ul {
+        list-style-position: inside;
+      }
+
+      img {
+        width: 100%;
+        /* width: calc(100% - 20px); */
+      }
+
+      #mainblock {
+        background-color: rgba(205, 188, 146, 0.842);
+        color: black;
+        grid-column: 2/4;
+      }
+
+      #rightsidebar {
+        background-color: rgb(218, 168, 168);
+        color: black;
+        grid-column: 4/5;
+      }
+
+      #footer {
+        background-color: rgb(61, 17, 52);
+        color: white;
+        height: 40px;
+        grid-column: 2/5;
+        display: flex;
+        align-self: flex-end;
+        align-content: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child" id="header">
+        <h1 class="center">BAKER'S WORLD</h1>
+      </div>
+      <div class="child" id="leftsidebar">
+        <h3 class="center">Menu</h3>
+        <ol>
+          <li>Apple pie</li>
+          <li>
+            Brownies
+            <ul>
+              <li>Caramel Brownies</li>
+              <li>Fudgy Brownies</li>
+              <li>Nut Brownies</li>
+            </ul>
+          </li>
+          <li>Cheese Cake</li>
+          <li>Donuts</li>
+          <li>Eclairs</li>
+          <li>Fruitcake</li>
+          <li>Granola Bar</li>
+          <li>Hazelnut Cake</li>
+          <li>
+            Ice Creams
+            <ul>
+              <li>Chocolate</li>
+              <li>Mango</li>
+              <li>Strawberry</li>
+              <li>vanilla</li>
+            </ul>
+          </li>
+          <li>Jelly Rolls</li>
+          <li>King Cake</li>
+          <li>Lava Cake</li>
+          <li>Muffins</li>
+          <li>Nutella-filled Pastry</li>
+          <li>Oatmeal Cookies</li>
+          <li>
+            Pancakes
+            <ul>
+              <li>American</li>
+              <li>Banana</li>
+              <li>Chocolate chip</li>
+            </ul>
+          </li>
+          <li>Quinoa Muffins</li>
+          <li>Rice Pudding</li>
+          <li>Swiss Roll</li>
+          <li>Tarts</li>
+          <li>Upside-down Cake</li>
+          <li>Vanilla Cream Puffs</li>
+          <li>
+            Waffles
+            <ul>
+              <li>Belgian</li>
+              <li>Oatmeal</li>
+              <li>Red Velvet</li>
+              <li>Triple Chocolate</li>
+            </ul>
+          </li>
+          <li>Xylose Bars</li>
+          <li>Yogurt Parfait</li>
+          <li>Zucchini Bread</li>
+        </ol>
+      </div>
+      <div class="child" id="mainblock">
+        <h2>About Baker's World</h2>
+
+        <p>
+          Welcome to Baker's World,
+          <i>a place where the art of baking meets the delight of savoring</i>.
+          With an enchanting fusion of tradition and innovation, we bring you a
+          symphony of flavors that captivate the senses. Our journey began with
+          a simple vision - to create moments of joy, one delicious bite at a
+          time.
+        </p>
+        <p>
+          Every day, our dedicated bakers craft an array of heavenly delights,
+          from our signature artisan bread to the most decadent cakes and
+          pastries. At Baker's World, we take pride in using the finest
+          ingredients, <b>handpicked with care</b>, to ensure that every
+          creation is a masterpiece.
+        </p>
+
+        <h3>What Sets Us Apart</h3>
+
+        <ul>
+          <li>
+            <b>Exquisite Flavors:</b> Experience a wide range of flavors that
+            transport you to a world of indulgence.
+          </li>
+          <li>
+            <b>Premium Ingredients:</b>We source only the best ingredients to
+            create our delectable treats.
+          </li>
+          <li>
+            <b>Creative Innovation:</b> Our bakers blend tradition with
+            innovation to craft unique and memorable delights.
+          </li>
+          <li>
+            <b>Quality Assurance:</b> Every item is made with precision and
+            passion, ensuring the highest quality.
+          </li>
+          <li>
+            <b>Celebrate Life:</b> Baker's World is where celebrations begin,
+            and every day becomes a special occasion.
+          </li>
+        </ul>
+
+        <h3>Our Signature Creations</h3>
+
+        <p>
+          Discover our exclusive signature creations that you won't find
+          anywhere else. At Baker's World, we take pride in our unique offerings
+          that make your taste buds dance with joy.
+        </p>
+        <p>
+          <b>Dreamy Chocolate Symphony:</b> Indulge in our heavenly chocolate
+          symphony - a rich, velvety chocolate cake with layers of chocolate
+          ganache and delicate chocolate shavings. It's a chocoholic's dream
+          come true.
+        </p>
+        <p>
+          <b>Floral Elegance Collection:</b> Elevate your afternoon tea with our
+          Floral Elegance Collection, featuring lavender-infused scones,
+          rosewater macarons, and Earl Grey-infused cupcakes. The delicate
+          floral notes will transport you to a garden in full bloom.
+        </p>
+        <p>
+          <b>Seasonal Surprise Pies:</b> Our seasonal surprise pies bring the
+          best of each season to your plate. From the warm, spiced apple pie in
+          the fall to the refreshing berry pie in the summer, we celebrate the
+          changing seasons with mouthwatering pie creations.
+        </p>
+
+        <hr />
+
+        <h3>Customer Testimonials</h3>
+
+        <p>
+          Don't just take our word for it. See what our satisfied customers have
+          to say about their Baker's World experience:
+        </p>
+        <ul>
+          <li>
+            "Baker's World has redefined the art of baking. Every bite is a
+            journey of exquisite flavors, and their commitment to quality is
+            unmatched." - Sarah R.
+          </li>
+          <li>
+            "I ordered a custom cake for my daughter's birthday, and it was a
+            showstopper. Baker's World made her day truly special." - Mark L.
+          </li>
+          <li>
+            "The seasonal pies are a family tradition in our house now. We look
+            forward to each new release." - Emily P.
+          </li>
+        </ul>
+
+        <br />
+        <hr />
+
+        <h3>Stay Connected</h3>
+        <p>
+          Stay up to date with all the delicious happenings at Baker's World.
+          Follow us on social media for exclusive promotions, behind-the-scenes
+          glimpses, and more!
+        </p>
+        <p class="center">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+          <a href="https://www.instagram.com" target="”_blank”">Instagram</a> |
+          <a href="https://www.twitter.com" target="”_blank”">Twitter</a>
+        </p>
+      </div>
+      <div class="child" id="rightsidebar">
+        <img
+          class="image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkw8kIb5WzuHeQDv9wV8qXZaC6OQeqUpILxkHDnnoAXvJzdkwNvgla6KJSLpRg8jPxYVQ&usqp=CAU"
+          alt="Baker's World logo"
+        />
+        <img
+          class="image"
+          src="https://res.cloudinary.com/purnesh/image/upload/f_auto/v1617689078/171617689076810.jpg"
+          alt="Birthday cake image"
+        />
+        <img
+          class="image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsjZraqjZM5M-YbaipmQzzOMNQRswITLljATbFRQkMR22wt4Qq8ghQ-I6gF4begHNBqpw&usqp=CAU"
+          alt="Donuts and Applpie box image"
+        />
+        <img
+          class="image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCBuilxL4FptwPXFksUhntpYg7eDgLCJztdA&usqp=CAU"
+          alt="Chef holding Baker's world freshly baked bread "
+        />
+      </div>
+      <div class="child" id="footer">
+        <p>© 2023 Baker's World. All rights reserved</p>
+      </div>
+    </div>
+  </body>
+</html>

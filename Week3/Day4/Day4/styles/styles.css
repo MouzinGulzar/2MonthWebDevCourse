@@ -1,0 +1,22 @@
+button {
+  background: none;
+  color: white;
+}
+
+.btn {
+  background-color: blue;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

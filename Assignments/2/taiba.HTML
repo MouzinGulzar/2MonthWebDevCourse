@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex Webpage Layout</title>
+  </head>
+  <style>
+    *,
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      height: 40px;
+      position: sticky;
+      top: 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr 150px; /* Sidebar - Content - Widgets */
+      grid-template-rows: auto;
+      gap: 30px;
+    }
+
+    .sidebar {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      height: calc(100vh - 40px);
+      position: fixed;
+      top: 80px;
+      
+      /* width: 200px; */
+      grid-column: 1/2;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .content {
+      background-color: plum;
+      padding: 20px;
+      height: 500px;
+      grid-column: 2/3;
+    }
+
+    .section {
+      margin: 20px;
+      background-color: lightgrey;
+      padding: 30px;
+    }
+
+    .widgets {
+      position: fixed;
+      top: 80px;
+      right: 0;
+      height: calc(100vh - 40px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #333;
+      padding: 50px;
+    }
+
+    .widget {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>ABC HIGH SCHOOL</h1>
+    </header>
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <main class="content">
+        <section class="section1">
+          <img
+            src="https://www.edustoke.com/assets/uploads-new/939a18a6-fabc-4e04-a64a-f1ae568b6092.jpg "
+            alt="ERROR"
+          />
+        </section>
+        <br />
+        <section class="section">
+          <h2>
+            <u><b>WELCOME TO ABC HIGH SCHOOL.</b></u>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo libero
+            pariatur modi quae Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Expedita temporibus accusamus similique, quasi
+            impedit laborum distinctio possimus laboriosam magnam autem, harum
+            non numquam quis magni exercitationem optio dolorum, amet
+            rem.Quisquam ab nesciunt asperiores doloremque commodi aliquid et
+            vero soluta, placeat dicta quidem iure architecto dolor sint.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2><a href="#">NOTIFICATIONS</a></h2>
+          <p>This is the main content of section 1.</p>
+        </section>
+        <section class="section">
+          <h2><a href="#">LATEST NEWS</a></h2>
+          <p>This is the main content of section 2.</p>
+        </section>
+        <section class="section">
+          <h2><a href="#">ACHIEVEMENTS</a></h2>
+          <p>This is the main content of section 3.</p>
+        </section>
+
+        <footer>Website by xyz softwares.</footer>
+      </main>
+
+      <aside class="widgets">
+        <div class="widget">
+          <img
+            src="https://feed.mikle.com/support/wp-content/uploads/sites/2/2020/12/instagram-1581266_1280.jpg"
+            height="70px"
+            width="70px"
+            alt="instagram"
+          />
+        </div>
+        <div class="widget">
+          <img
+            src="https://s.widget-club.com/samples/zp7kZ1UE9Be9e0Rh3lTZQ0w7MdB3/8uKfoPX8opngX0QEW02N/09558E08-8FD5-4DB7-B700-0C35363FEAA2.jpg?q=70"
+            height="70px"
+            width="70px"
+            alt="facebook"
+          />
+        </div>
+        <div class="widget">
+          <img
+            src="https://assets-global.website-files.com/60b8bf8e40aec0189a7ba5e6/610313f990552bef1e6001e3_cta.png"
+            height="85px"
+            width="85px"
+            alt="Whatsapp"
+          />
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

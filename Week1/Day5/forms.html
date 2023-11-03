@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <!-- FORMS: We can collect data from the user -->
+
+</head>
+<body>
+    <form>
+        <label for="user">Name:</label>
+        <input type="text" id="user" name="user" placeholder="Your Name" required>
+        <br><br>
+        
+        <label for="father-name">Father's Name:</label>
+        <input type="text" id="father-name" name="father-name" placeholder="Your Father's name" required>
+        <br><br>
+
+        <label for="contact-number">Phone:</label>
+        <input type="number" id="contact-number" name="contact-number" placeholder="+91XXXXXXXXXX" required>
+        <br><br>
+
+        <label for="contact-number-home">Home:</label>
+        <input type="number" id="contact-number-home" name="contact-number-home" placeholder="+91XXXXXXXXXX" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="yourname@example.com" name="email" required>
+        <br><br>
+
+        <label for="">DOB:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="profile">Photograph:</label>
+        <input type="file" id="profile" name="profile" required>
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pass" placeholder="**********" required>
+        <br><br>
+
+        <label for="bio">Bio: </label>
+        <br>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <label for="qualification">Qualification: </label>
+        <select name="qualification" id="qualification">
+            <option value="" disabled selected>Select</option>
+            <option value="1">Phd</option>
+            <option value="2">Postgraduate</option>
+            <option value="3">Undergradute</option>
+            <option value="4">Intermediate</option>
+            <option value="5">Matriculation</option>
+            <option value="6">Middle</option>
+            <option value="7">Primary</option>
+        </select>
+        <br><br>
+
+        <label for="interests">Interests:</label>
+        <br>
+        <input type="checkbox" id="interest1" name="interest1" value="1">
+        <label for="interest1"> Playing</label>
+        <br>
+        <input type="checkbox" id="interest2" name="interest2" value="2">
+        <label for="interest2"> Writing</label>
+        <br>
+        <input type="checkbox" id="interest3" name="interest3" value="3">
+        <label for="interest3">Poetry</label>
+        <br>
+        <input type="checkbox" id="interest4" name="interest4" value="4">
+        <label for="interest4">Coding</label>
+        <br><br>
+
+        <label for="course">Course:</label>
+        <br>
+        <input type="radio" id="course1" name="course" value="1">
+        <label for="course1"> B.tech</label>
+        <br>
+        <input type="radio" id="course2" name="course" value="2">
+        <label for="course2"> M.tech</label>
+        <br>
+        <input type="radio" id="course3" name="course" value="3">
+        <label for="course3">BCA</label>
+        <br>
+        <input type="radio" id="course4" name="course" value="4">
+        <label for="course">MCA</label>
+        <br><br>
+
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
