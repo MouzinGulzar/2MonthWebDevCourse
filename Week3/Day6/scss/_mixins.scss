@@ -1,0 +1,29 @@
+@mixin message($type) {
+    background-color: rgba($type, 0.25);
+    border: 1px solid $type;
+    box-shadow: 0 0 10px rgba($type, .5);
+    padding: 1rem .5rem;
+    border-radius: 5px;
+    width: 50%;
+    margin: 1rem auto;
+
+    @include tablet {
+        width: 75%;
+    }
+    
+    @include phone {
+        width: auto;
+        margin: 1rem;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet) {
+        @content;
+    }
+}
+@mixin phone {
+    @media only screen and (max-width: $phone) {
+        @content;
+    }
+}

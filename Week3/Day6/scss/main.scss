@@ -1,0 +1,20 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+*, body {
+    // margin: 0;
+    // padding: 0;
+    box-sizing: border-box;
+}
+
+.alert-msg {
+    @include message($alert-color);
+}
+
+.warning-msg {
+    @include message($warning-color);
+}
+
+.info-msg {
+    @include message($info-color);
+}

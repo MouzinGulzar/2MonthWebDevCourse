@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Colors
+$primary-color: #1C3041;
+$secondary-color: #89043D;
+$tertiary-color: #d2cdfb;
+$quaternary-color: #2FE6DE;
+
+$alert-color: #ff0000;
+$warning-color: #ff8e04;
+$info-color: #0088ff;
+
+// Fonts
+$primary-font: 'Poppins', serif;
+$secondary-font: 'Merriweather', serif;
+
+// Breakpoints
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
