@@ -1,0 +1,12 @@
+#header
+{
+    grid-area: header;
+    background-color: $primary-color;
+    color:$text-color1;
+    height:50px;
+    display:flex;
+    position:sticky;
+    top:0;
+    align-items: center;
+    justify-content: center;
+}

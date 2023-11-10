@@ -1,0 +1,41 @@
+@keyframes myfirstanimation {
+  0% {
+    background-color: #ff0000;
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(100%);
+  }
+  50% {
+    background-color: purple;
+    transform: translate(100%, 100%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+  100% {
+    background-color: green;
+    transform: translateX(0);
+  }
+}
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  position: relative;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.97, 0.39);
+}
+.parent .child {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  animation: myfirstanimation 10s ease-in-out forwards infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+#leftside-bar
+{
+    grid-area: leftside-bar;
+    display:flex;
+    position: sticky;
+    top:90px;
+    background-color: $tertiary-color;
+    height: calc( 100vh - 90px );
+    overflow-y: auto;
+    ul
+    {
+        li
+        {
+            text-align: center;
+            & :hover
+                {
+                    background-color: $primary-color;
+                    color: $text-color1;
+                }
+            a
+            {
+                display: block;
+                padding: 10px;
+                color: $text-color2;
+            }
+        }
+    }
+}

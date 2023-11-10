@@ -1,0 +1,11 @@
+button
+{
+    background-color: $primary-color;
+    color:$text-color1;
+    padding:10px 20px;
+    &:hover
+    {
+        background-color: $text-color1;
+        color:$primary-color;
+    }
+}
