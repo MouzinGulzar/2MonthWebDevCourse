@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 25rem;
+  overflow-y: scroll;
+  transform: translate(-52%, -50%) !important;
+}
+
+#todo-track {
+  position: absolute !important;
+  top: 50px !important;
+}
+
+.todo-input {
+  display: flex;
+
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 2rem;
+}
+
+#input {
+  width: 20rem;
+  outline: none;
+  border: 1px solid rgb(78, 51, 255);
+  border-radius: 5px;
+  padding: 0.5rem 0.25rem;
+  font-size: 1.2rem;
+}
+
+#input:focus {
+  box-shadow: 0px 0px 5px rgb(78, 51, 255);
+}
+
+button {
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  gap: .5rem;
+}
+
+#btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: none;
+  background-color: rgb(78, 51, 255);
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgb(78, 51, 255, 0.8);
+}
+
+.btn-del,
+.btn-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  /* background-color: rgb(78, 51, 255, 0.8); */
+}
+
+.btn-del:hover svg,
+.btn-edit:hover svg {
+  transform: rotate(5deg);
+}
+
+.btn-del:hover svg {
+  fill: rgba(252, 74, 74, 0.8);
+}
+
+.btn-edit:hover svg {
+  fill: rgba(87, 103, 254, 0.8);
+}
+
+#todos li {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  box-shadow: 0px 0px 10px rgb(106, 83, 255);
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+#todos::-webkit-scrollbar {
+  width: 5px;
+}
+
+#todos::-webkit-scrollbar-thumb {
+  background: rgb(78, 51, 255);
+  border-radius: 100px;
+}
