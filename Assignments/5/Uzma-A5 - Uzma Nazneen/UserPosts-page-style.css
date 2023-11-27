@@ -1,0 +1,63 @@
+.userPostContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    /* height: 25rem; */
+    justify-content: space-between;
+  }
+  
+  .card img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    background-color: grey;
+    animation: placeholderLoading 0.75s ease-in-out infinite alternate;
+  }
+ 
+  .description {
+    padding: 1rem;
+  }
+  .description h1{
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .description p
+  {
+    text-align: justify;
+  }
+  .author-container
+  {
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #df1987, #e84e50);
+   flex-wrap: wrap;
+   gap:1rem;
+   align-items: center;
+   justify-content: space-around;
+   padding: 2rem 0;
+  }
+  .author-container img
+  {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width:10vw;
+    
+  }
+  .author-details
+  {
+      font-size:1rem;
+      text-align: center;
+      color:white;
+  }
